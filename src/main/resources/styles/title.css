@@ -1,0 +1,29 @@
+/* Style for the title */
+.text {
+    -fx-font-family: 'Verdana';
+    -fx-font-size: 45px; /* Large font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-fill: linear-gradient(from 0% 0% to 100% 100%, #ffcc00, #ff9900); /* Vibrant gradient color */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 10, 0.5, 0, 0); /* Drop shadow effect */
+    -fx-padding: 20px; /* Padding around the text */
+    -fx-background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    -fx-background-radius: 10px; /* Rounded corners for background */
+    -fx-border-radius: 10px; /* Rounded corners for border */
+    -fx-border-color: #ffffff; /* White border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.text:hover {
+    -fx-fill: linear-gradient(from 0% 0% to 100% 100%, #ffdd33, #ffbb33); /* Lighter gradient color on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.9), 15, 0.7, 0, 0); /* Stronger drop shadow effect on hover */
+    -fx-scale-x: 1.05; /* Slightly increase size on hover */
+    -fx-scale-y: 1.05; /* Slightly increase size on hover */
+}
+
+.text:pressed {
+    -fx-fill: linear-gradient(from 0% 0% to 100% 100%, #ffbb00, #ff8800); /* Darker gradient color when pressed */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 10, 0.5, 0, 0); /* Drop shadow effect */
+    -fx-scale-x: 0.95; /* Slightly decrease size when pressed */
+    -fx-scale-y: 0.95; /* Slightly decrease size when pressed */
+}
